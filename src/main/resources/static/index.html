@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Weather App</title>
+<link href="./index.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="app">
+		<label for="city">Select city: </label> <select id="city" class="city">
+			<option value="lon">London</option>
+			<option value="mos">Moscow</option>
+			<option value="par">Paris</option>
+		</select> <br /> <label for="service">Select service: </label> <select
+			id="service" class="service">
+			<option value="ApixuWeatherService">Apixu weather</option>
+			<option value="OpenWeatherService">Open weather</option>
+		</select> <br />
+		<button class="show">Show</button>
+		<br /> <span class="loading hidden">Loading...</span> <br /> <span
+			class="temperature"></span>
+	</div>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
